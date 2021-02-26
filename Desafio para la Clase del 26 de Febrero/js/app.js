@@ -13,22 +13,22 @@ console.log(`La operación que quiere realizar ${operacion}`)
 
 if ((isNaN(num1)) || (isNaN(num2))) {
     console.error("No ingreso ningun número valido. Vuelva a Intentarlo...");
-}
-
-switch (operacion) {
-    case "+":
-        console.log("La suma de los dos números es " + (num1 + num2))
-        break;
-    case "-":
-        console.log("La restar de los dos números es " + (num1 - num2))
-        break;
-    case "*":
-        console.log("La multiplicación de los dos números es " + (num1 * num2))
-        break;
-    case "/":
-        console.log("La división de los dos números es " + (num1 / num2))
-        break;
-    default:
-        console.error("No se pudo realizar la operación deseada")
-        break;
+} else {
+    switch (operacion) {
+        case "+":
+            console.log("La suma de los dos números es " + (num1 + num2))
+            break;
+        case "-":
+            console.log("La restar de los dos números es " + (num1 - num2))
+            break;
+        case "*":
+            console.log("La multiplicación de los dos números es " + (num1 * num2))
+            break;
+        case "/":
+            console.log("La división de los dos números es " + (num1 / num2))
+            break;
+        default:
+            console.error("No se pudo realizar la operación deseada")
+            break;
+    }
 }
