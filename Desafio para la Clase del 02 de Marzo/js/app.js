@@ -20,7 +20,7 @@
 // });
 // $('#box').click(buttonAction);
 
-let salida = ""
+let salida = "";
 let carritoDeCompras = [];
 
 function ingreso() {
@@ -34,9 +34,9 @@ function ingreso() {
 }
 
 function listado() {
-    console.log('Listado de productos en el carrito')
+    console.log('Listado de productos en el carrito');
     for (let i = 0; i < carritoDeCompras.length; i++) {
-        console.log(`Producto número ${i + 1} = ${carritoDeCompras[i]}`)
+        console.log(`Producto número ${i + 1} = ${carritoDeCompras[i]}`);
     }
 }
 
