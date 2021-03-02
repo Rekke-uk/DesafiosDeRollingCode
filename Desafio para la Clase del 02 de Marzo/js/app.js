@@ -20,11 +20,27 @@
 // });
 // $('#box').click(buttonAction);
 
+let salida = ""
+let carritoDeCompras = [];
 
+function ingreso() {
+    while (salida != null) {
+        let producto = prompt('Ingrese el producto que desea comprar, si ya termino de click en cancelar.');
+        if (producto !== null && producto !== "") {
+            carritoDeCompras.push(producto.trim().toLowerCase());
+        }
+        salida = producto;
+    }
+}
 
-// let producto1 = prompt("Ingrese el producto que desea comprar");
-// console.log(`El ingreso que usted ingreso es: ${producto1}`);
-// let producto2 = prompt("Ingrese el producto que desea comprar");
-// console.log(`El ingreso que usted ingreso es: ${producto2}`);
-// let producto3 = prompt("Ingrese el producto que desea comprar");
-// console.log(`El ingreso que usted ingreso es: ${producto3}`);
+function listado() {
+    console.log('Listado de productos en el carrito')
+    for (let i = 0; i < carritoDeCompras.length; i++) {
+        console.log(`Producto número ${i + 1} = ${carritoDeCompras[i]}`)
+    }
+}
+
+console.log("Carrito de Compras nashe");
+
+ingreso();
+listado();
