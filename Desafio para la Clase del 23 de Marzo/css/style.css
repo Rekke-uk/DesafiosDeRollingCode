@@ -1,0 +1,8 @@
+.botonParaComprar {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top{
+    background-size: cover;
+}
