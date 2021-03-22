@@ -10,6 +10,7 @@ function buyProduct(name, price) {
     let product = new Product(name, price)
     products.push(product)
     localStorage.setItem('products', JSON.stringify(products))
+    productList()
 }
 
 function productList() {
@@ -22,6 +23,7 @@ function productList() {
         list.appendChild(div, list)
     })
 }
+productList()
 
 // // Eliminar productos del carrito.
 // function eliminarProducto(producto = prompt(`Ingrese el producto a eliminar.`)) {
