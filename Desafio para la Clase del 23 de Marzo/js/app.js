@@ -17,8 +17,7 @@ function agregarProducto() {
 function listarProductos() {
     console.log(`Su lista de productos es la siguiente`)
     for (let i = 0; i < carrito.length; i++) {
-        // console.log(`${i + 1} ${carrito[i]}`)
-        JSON.parse(localStorage.getItem(`${i + 1} ${carrito[i]}`))
+        console.log(`${i + 1} ${carrito[i]}`)
     }
 }
 

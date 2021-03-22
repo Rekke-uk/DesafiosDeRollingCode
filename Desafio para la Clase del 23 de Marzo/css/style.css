@@ -3,6 +3,6 @@
     justify-content: center;
 }
 
-.card-img-top{
-    background-size: cover;
+.card{
+    height: 500px;
 }
